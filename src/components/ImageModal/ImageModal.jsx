@@ -32,11 +32,6 @@ export default function ImageModal({ image, alt, modalIsOpen, closeModal }) {
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            onKeyDown={(e) => {
-                if (e.key === 'Escape') {
-                onRequestClose()
-                }
-            }}
         style={customStyles}>
             <img src={image} alt={alt} />
         </Modal>
